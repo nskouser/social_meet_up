@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:social_meet_up/guide/basic_Elements_1.dart';
 import 'package:social_meet_up/guide/cards_4.dart';
+import 'package:social_meet_up/main_App/detail_Page7.dart';
 import 'package:social_meet_up/main_App/groups_page5.dart';
+import 'package:social_meet_up/main_App/message_Page16.dart';
+import 'package:social_meet_up/main_App/notification_Page15.dart';
 import 'package:social_meet_up/main_App/trending_Page_4.dart';
+import 'package:social_meet_up/onboarding/welcome_Page1.dart';
+import 'package:social_meet_up/stats&Info/statistics1_Page1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +33,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Caards(),
+      home: BasicElements(),
     );
   }
 }

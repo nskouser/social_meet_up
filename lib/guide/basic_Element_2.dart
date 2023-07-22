@@ -29,7 +29,10 @@ class BasicElement_2 extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 30, 0, 20),
-                child: GestureDetector(onTap: (){navigateTo(context, HeadersAndInputs());},
+                child: GestureDetector(
+                  onTap: () {
+                    navigateTo(context, HeadersAndInputs());
+                  },
                   child: Text(
                     "Montserrat",
                     style: TextStyle(
@@ -59,8 +62,8 @@ class BasicElement_2 extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 30, 0, 20),
             child: Text(
               "ABCDEFGHIJKLMNOPQRSTUVWXYz\n"
-                  "abcdefghijklmnopqrstuvwxyz\n"
-                  "1234567890!@#%?&*()",
+              "abcdefghijklmnopqrstuvwxyz\n"
+              "1234567890!@#%?&*()",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

@@ -157,7 +157,7 @@ class HeadersAndInputs extends StatelessWidget {
               width: 375,
               color: white,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
                     width: 81,
@@ -178,16 +178,7 @@ class HeadersAndInputs extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
-                    child: Text(
-                      "TODAY",
-                      style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w600,
-                          color: lightindigo),
-                    ),
-                  ),
+
                   Padding(
                     padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                     child: Text(
@@ -310,9 +301,8 @@ class HeadersAndInputs extends StatelessWidget {
               ),
             ],
           ),
-
           Padding(
-            padding: const EdgeInsets.fromLTRB(20,0,20,20),
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
             child: Container(
               width: 327,
               height: 52,
@@ -323,7 +313,10 @@ class HeadersAndInputs extends StatelessWidget {
                 ),
               ),
               child: Center(
-                child: GestureDetector(onTap: (){navigateTo(context, Caards());},
+                child: GestureDetector(
+                  onTap: () {
+                    navigateTo(context, Caards());
+                  },
                   child: Text(
                     "NEXT",
                     style: TextStyle(
@@ -336,9 +329,8 @@ class HeadersAndInputs extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(20,0,20,20),
-            child:
-            Container(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+            child: Container(
               width: 327,
               height: 52,
               decoration: BoxDecoration(
@@ -351,9 +343,7 @@ class HeadersAndInputs extends StatelessWidget {
                 child: Text(
                   "FACEBOOK",
                   style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: white),
+                      fontSize: 14, fontWeight: FontWeight.w600, color: white),
                 ),
               ),
             ),
@@ -361,7 +351,7 @@ class HeadersAndInputs extends StatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.fromLTRB(20,10,20,30),
+                padding: const EdgeInsets.fromLTRB(20, 10, 20, 30),
                 child: Container(
                   width: 56,
                   height: 56,
@@ -372,13 +362,14 @@ class HeadersAndInputs extends StatelessWidget {
                     ),
                   ),
                   child: Center(
-                    child: Icon(Icons.add,color: white,)
-
-                  ),
+                      child: Icon(
+                    Icons.add,
+                    color: white,
+                  )),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0,10,20,30),
+                padding: const EdgeInsets.fromLTRB(0, 10, 20, 30),
                 child: Container(
                   width: 56,
                   height: 56,
@@ -389,15 +380,15 @@ class HeadersAndInputs extends StatelessWidget {
                     ),
                   ),
                   child: Center(
-                      child: Icon(Icons.add,
-                        //color: white,
-                      ),
-
+                    child: Icon(
+                      Icons.add,
+                      //color: white,
+                    ),
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(0,10,0,30),
+                padding: const EdgeInsets.fromLTRB(0, 10, 0, 30),
                 child: Container(
                   width: 80,
                   height: 44,
@@ -415,15 +406,11 @@ class HeadersAndInputs extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           color: white),
                     ),
-
-
                   ),
                 ),
               ),
-
             ],
           ),
-
         ],
       ),
     );
