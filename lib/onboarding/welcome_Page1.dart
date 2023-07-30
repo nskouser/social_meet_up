@@ -13,7 +13,7 @@ class _Wellcome_1State extends State<Wellcome_1> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Stack(
@@ -29,7 +29,7 @@ class _Wellcome_1State extends State<Wellcome_1> {
                     ),
                     fit: BoxFit.cover),
               ),
-              child: SizedBox(),
+              child: const SizedBox(),
             ),
             Positioned(
               bottom: 100,
@@ -37,25 +37,24 @@ class _Wellcome_1State extends State<Wellcome_1> {
               child: Container(
                 height: 200,
                 width: MediaQuery.of(context).size.width * .8,
-                child: SizedBox(),
                 decoration: const BoxDecoration(
                   color: indigo,
                   borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50.0)),
                 ),
+                child: const SizedBox(),
               ),
             ),
-
             Positioned(
               bottom: 70,
               right: 0,
               child: Container(
                 height: 80,
                 width: MediaQuery.of(context).size.width * .5,
-                child: SizedBox(),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.red,
                   borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50.0)),
                 ),
+                child: const SizedBox(),
               ),
             ),
           ],
